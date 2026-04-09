@@ -4,23 +4,43 @@ using System;
 // stastic data members
 // static methods
 // }
-class MyColl
-{
-    public static string collegename;
-    public static string address;
+// class MyColl
+// {
+//     public static string collegename;
+//     public static string address;
 
-    static MyColl()
+//     static MyColl()
+//     {
+//         collegename = "Lumbini ICT Campus";
+//         address = "Gaindakot, Nawalpur";
+//     }
+// }
+// class Pro
+// {
+//     static void Main(string[] args)
+//     {
+//         Console.WriteLine(MyColl.collegename);
+//         Console.WriteLine(MyColl.address);
+
+//     }
+// }
+static class Author
+{
+    public static string fname = "Sagar";
+    public static string lname = "Thapa Magar";
+    public static int id = 001;
+    public static void details()
     {
-        collegename = "Lumbini ICT Campus";
-        address = "Gaindakot, Nawalpur";
+        Console.WriteLine("This details of Author:");
     }
 }
-class Pro
+public class GG
 {
-    static void Main(string[] args)
+    static public void Main()
     {
-        Console.WriteLine(MyColl.collegename);
-        Console.WriteLine(MyColl.address);
-
+        Author.details();
+        Console.WriteLine("Author Fname:{0}",Author.fname);
+        Console.WriteLine("Author Lname:{0}",Author.lname);
+        Console.WriteLine("Author ID:{0}",Author.id);
     }
 }
